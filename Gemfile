@@ -18,6 +18,12 @@ gem 'sass-rails', '>= 3.2'
 
 gem 'toastr-rails'
 
+gem 'sendgrid-rails', '~> 2.0', '>= 2.0.5' 
+gem "figaro"
+
+gem 'omniauth'
+gem 'omniauth-facebook'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
