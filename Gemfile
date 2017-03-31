@@ -25,6 +25,9 @@ gem 'omniauth'
 gem 'omniauth-facebook'
 gem "omniauth-google-oauth2"
 
+#fontawesome
+gem 'font-awesome-sass'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
