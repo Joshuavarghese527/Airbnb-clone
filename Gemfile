@@ -28,6 +28,9 @@ gem "omniauth-google-oauth2"
 #fontawesome
 gem 'font-awesome-sass'
 
+#paperclip for images
+gem 'paperclip'
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
