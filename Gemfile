@@ -31,6 +31,10 @@ gem 'font-awesome-sass'
 #paperclip for images
 gem 'paperclip'
 
+#geocoder google maps
+
+gem "geocoder"
+
 group :development, :test do
   gem 'byebug', platform: :mri
 end
