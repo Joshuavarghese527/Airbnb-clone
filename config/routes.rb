@@ -1,5 +1,4 @@
 Rails.application.routes.draw do
-  
 
   root 'pages#home'
 
@@ -13,7 +12,9 @@ Rails.application.routes.draw do
   resources :users, only: [:show]
   resources :rooms
   resources :photos
-  resources :room do 
-    resources :reservations, only: [:create]
-end
 
+  resources :rooms do
+    resources :reservations, only: [:create]
+  end
+
+end
