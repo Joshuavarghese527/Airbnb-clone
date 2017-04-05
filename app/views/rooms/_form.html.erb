@@ -10,8 +10,7 @@
         <div class="row">
           <div class="col-md-4 select">
             <div class="form-group">
-              <i class="fa fa-home" aria-hidden="true"></i><label>Home Type</label>
-              <!--first is value second is key -->
+              <label>Home Type</label>
               <%= f.select :home_type, [["Apartment","Apartment"], ["House","House"], ["Bed & Breakfast","Bed & Breakfast"]], id: "home_type", prompt: "Select...", class: "form-control" %>
             </div>
           </div>
@@ -19,7 +18,6 @@
           <div class="col-md-4 select">
             <div class="form-group">
               <label>Room Type</label>
-              <!--first is value second is key -->
               <%= f.select :room_type, [["Entire","Entire"], ["Private","Private"], ["Shared","Shared"]],prompt: "Select...", class: "form-control" %>
             </div>
           </div>
@@ -27,7 +25,6 @@
           <div class="col-md-4 select">
             <div class="form-group">
               <label>Accommodate</label>
-              <!--first is value second is key -->
               <%= f.select :accommodate, [["1",1], ["2",2], ["3",3], ["4",4], ["5",5], ["6+",6]], prompt: "Select...", class: "form-control" %>
             </div>
           </div>
@@ -37,8 +34,7 @@
           <div class="col-md-4 select">
             <div class="form-group">
               <label>Bedrooms</label>
-              <!--first is value second is key -->
-              <%= f.select :bed_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %> 
+              <%= f.select :bed_room, [["1",1], ["2",2], ["3",3], ["4+",4]], prompt: "Select...", class: "form-control" %>
             </div>
           </div>
 
@@ -106,7 +102,6 @@
           </div>
         </div>
 
-        
         <div class="row">
           <div class="col-md-4">
             <div class="form-group">              
