@@ -10,7 +10,7 @@ class ReservationsController < ApplicationController
   end
 
   def preview
-    start_date = Date.parse(params[:start_date]) #pass from string to date
+    start_date = Date.parse(params[:start_date])
     end_date = Date.parse(params[:end_date])
 
     output = {
@@ -24,6 +24,10 @@ class ReservationsController < ApplicationController
     @reservation = current_user.reservations.create(reservation_params)
 
     redirect_to @reservation.room, notice: "Your reservation has been created..."
+  end
+
+  def your_trips
+    @trips = current_user.reservations
   end
 
   private

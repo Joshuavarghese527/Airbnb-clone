@@ -1,5 +1,6 @@
 Rails.application.routes.draw do
 
+
   root 'pages#home'
 
   devise_for  :users, 
@@ -19,5 +20,7 @@ Rails.application.routes.draw do
 
   get '/preload' => 'reservations#preload'
   get '/preview' => 'reservations#preview'
+
+  get '/your_trips' => 'reservations#your_trips'
 
 end
