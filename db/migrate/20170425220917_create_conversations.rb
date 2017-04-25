@@ -1,6 +1,6 @@
-class CreateConverstaions < ActiveRecord::Migration[5.0]
+class CreateConversations < ActiveRecord::Migration[5.0]
   def change
-    create_table :converstaions do |t|
+    create_table :conversations do |t|
       t.integer :sender_id
       t.integer :recipient_id
 
