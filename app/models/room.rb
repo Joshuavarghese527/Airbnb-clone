@@ -19,4 +19,5 @@ class Room < ApplicationRecord
   def average_rating 
     #reviews > 0 then get average star field  and then after round by two
     reviews.count == 0 ? 0 : reviews.average(:star).round(2)
+  end
 end
