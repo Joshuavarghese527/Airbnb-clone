@@ -3,7 +3,9 @@
   <div id="sidebar">
     <div id="widget" class="sticky">
 
-      <script src="https://maps.googleapis.com/maps/api/js"></script>
+       <script async defer
+    src="https://maps.googleapis.com/maps/api/js?key=<%= ENV['google_map_id'] %>&callback=initMap">
+    </script>
       <script>
         function initialize() {
           var mapCanvas = document.getElementById('widget');
