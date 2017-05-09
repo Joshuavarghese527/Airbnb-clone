@@ -20,8 +20,6 @@
 @import "toastr";
 @import "font-awesome-sprockets";
 @import "font-awesome";
-
-
 body {  
   color: #565a5c;
   background-color: #F8F8F8;
@@ -266,4 +264,25 @@ input[type="checkbox"]:checked:before {
 
 .conversation:hover, .conversation:focus {
   background-color: #F4F4F5;
+}
+
+#wrapper { 
+  width:960px;
+  margin:0 auto;
+}
+
+#sidebar {
+  float:right;
+  width:340px;
+}
+
+#sidebar #widget {
+  width:340px;
+  height: 600px;
+  margin-bottom:10px;
+  border-bottom:1px solid #ccc;
+}
+
+#article {
+  width:560px;
 }
