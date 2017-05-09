@@ -18,7 +18,7 @@
               <%= image_tag room.photos[0].image.url(:thumb) if room.photos.length > 0 %>
             </div>    
             <div class="col-md-7">
-              <h4><%= room.listing_name %></h4>
+              <h4><%= link_to room.listing_name %></h4>
             </div>    
             <div class="col-md-3 right">
               <%= link_to "Update", edit_room_path(room), class: "btn btn-primary" %>
